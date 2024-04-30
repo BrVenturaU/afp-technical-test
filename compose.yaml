@@ -1,0 +1,26 @@
+version: '3.0'
+services:
+  db:
+    container_name: db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=AwesomePass_1234
+    restart: on-failure
+  afpcompanyapi:
+    container_name: api
+    depends_on:
+      - db
+    build: 
+      context: .
+    image: brventura/afpcompanyapi:1.0.0
+    ports:
+      - "8080:5000"
+      - "8081:5001"
+    environment:
+      - ASPNETCORE_KESTREL__Certificates__Default__Password=awesomepass
+      - ASPNETCORE_KESTREL__Certificates__Default__Path=/https/afpcompanyapi.pfx
+    volumes:
+      - ${USERPROFILE}/.aspnet/https:/https/
