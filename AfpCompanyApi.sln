@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfpCompanyApi", "AfpCompanyApi\AfpCompanyApi.csproj", "{99EB81CA-74C8-4C47-8424-6A99F4C6C356}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfpCompanyApi.Tests", "AfpCompanyApi.Tests\AfpCompanyApi.Tests.csproj", "{AC655C91-F2E1-47EE-8F16-5D8B9C3D10B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{99EB81CA-74C8-4C47-8424-6A99F4C6C356}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99EB81CA-74C8-4C47-8424-6A99F4C6C356}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99EB81CA-74C8-4C47-8424-6A99F4C6C356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC655C91-F2E1-47EE-8F16-5D8B9C3D10B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC655C91-F2E1-47EE-8F16-5D8B9C3D10B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC655C91-F2E1-47EE-8F16-5D8B9C3D10B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC655C91-F2E1-47EE-8F16-5D8B9C3D10B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
