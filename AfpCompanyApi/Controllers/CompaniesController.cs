@@ -23,7 +23,8 @@ namespace AfpCompanyApi.Controllers
             
             try
             {
-                return await _companyService.GetCompanyById(id);
+                var some = await _companyService.GetCompanyById(id);
+                return Ok(some);
             }catch (CompanyNotFoundException ex) {
                 return NotFound(ex.Message);
             }

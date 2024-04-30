@@ -10,6 +10,5 @@ namespace AfpCompanyApi.Dtos
         public int EmployeesCount { get; set; }
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public OrganizationLevel Level { get; set; }
-        public int CompanyId { get; set; }
     }
 }
