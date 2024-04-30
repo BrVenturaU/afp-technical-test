@@ -1,0 +1,6 @@
+@AfpCompanyApi_HostAddress = http://localhost:5201
+
+GET {{AfpCompanyApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
